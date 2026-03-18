@@ -43,8 +43,8 @@ remove_files(7)
 
 
 
-st.title("Reconocimiento reconocido de reconocimiento")
-st.subheader("Debes sacrificar una imagen al vacio del internet")
+st.title("Reconocimiento increible de imagenes")
+st.subheader("Debes sacrificar una imagen a los dioses del internet para que ellos la lean y te den un output")
 
 cam_ = st.checkbox("Usar Cámara")
 
@@ -102,35 +102,35 @@ with st.sidebar:
       #text = st.text_input("Enter text")
       in_lang = st.selectbox(
           "Seleccione el lenguaje de entrada",
-          ("Ingles", "Español", "Bengali", "koreano", "Mandarin", "Japones"),
+          ("Ingles", "Español", "Frances", "koreano", "Aleman", "Japones"),
       )
       if in_lang == "Ingles":
           input_language = "en"
       elif in_lang == "Español":
           input_language = "es"
-      elif in_lang == "Bengali":
-          input_language = "bn"
+      elif in_lang == "Frances":
+          input_language = "fr"
       elif in_lang == "koreano":
           input_language = "ko"
-      elif in_lang == "Mandarin":
-          input_language = "zh-cn"
+      elif in_lang == "Aleman":
+          input_language = "de"
       elif in_lang == "Japones":
           input_language = "ja"
       
       out_lang = st.selectbox(
-          "Select your output language",
-          ("Ingles", "Español", "Bengali", "koreano", "Mandarin", "Japones"),
+          "Selecciona tu lenguaje de output",
+          ("Ingles", "Español", "Frances", "koreano", "Aleman", "Japones"),
       )
       if out_lang == "Ingles":
           output_language = "en"
       elif out_lang == "Español":
           output_language = "es"
-      elif out_lang == "Bengali":
-          output_language = "bn"
+      elif out_lang == "Frances":
+          output_language = "fr"
       elif out_lang == "koreano":
           output_language = "ko"
-      elif out_lang == "Chinese":
-          output_language = "zh-cn"
+      elif out_lang == "Aleman":
+          output_language = "de"
       elif out_lang == "Japones":
           output_language = "ja"
       
