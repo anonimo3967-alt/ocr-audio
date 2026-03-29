@@ -174,7 +174,7 @@ with st.sidebar:
           st.audio(audio_bytes, format="audio/mp3", start_time=0)
       
           if display_output_text:
-              st.markdown(f"## De esta manera, el texto dice...:")
+              st.markdown(f"## A ver que tenemos aqui... Y, ¡descifrado!:")
               st.write(f" {output_text}")
 
 
