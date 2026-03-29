@@ -55,9 +55,9 @@ else :
    
 with st.sidebar:
       st.subheader("Procesamiento para Cámara")
-      filtro = st.radio("Filtro para imagen con cámara",('Sí', 'No'))
+      filtro = st.radio("kiereh tu un filtro?",('Seeeh', 'Noooooooo'))
 
-bg_image = st.file_uploader("Cargar Imagen:", type=["png", "jpg"])
+bg_image = st.file_uploader("Carga una imagen...:", type=["png", "jpg"])
 if bg_image is not None:
     uploaded_file=bg_image
     st.image(uploaded_file, caption='Imagen cargada.', use_container_width=True)
@@ -79,7 +79,7 @@ if img_file_buffer is not None:
     cv2_img = cv2.imdecode(np.frombuffer(bytes_data, np.uint8), cv2.IMREAD_COLOR)
 
     
-    if filtro == 'Con Filtro':
+    if filtro == 'Seeeh':
          cv2_img=cv2.bitwise_not(cv2_img)
     else:
         cv2_img= cv2_img
@@ -144,7 +144,7 @@ with st.sidebar:
               "Canada",
               "Australia",
               "Ireland",
-              "South Africa",
+              "Français",
           ),
       )
       
@@ -163,8 +163,8 @@ with st.sidebar:
           tld = "com.au"
       elif english_accent == "Ireland":
           tld = "ie"
-      elif english_accent == "South Africa":
-          tld = "co.za"
+      elif english_accent == "Français":
+          tld = "co.fr"
 
       display_output_text = st.checkbox("Mostrar texto")
 
