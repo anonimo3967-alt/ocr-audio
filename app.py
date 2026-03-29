@@ -101,7 +101,7 @@ with st.sidebar:
       
       #text = st.text_input("Enter text")
       in_lang = st.selectbox(
-          "Seleccione el lenguaje de entrada",
+          "¿En que idioma esta la imagen?",
           ("Ingles", "Español", "Frances", "koreano", "Aleman", "Japones"),
       )
       if in_lang == "Ingles":
@@ -135,7 +135,7 @@ with st.sidebar:
           output_language = "ja"
       
       english_accent = st.selectbox(
-          "Seleccione el acento",
+          "Selecciona el acento de tu audio personalizado",
           (
               "Default",
               "India",
