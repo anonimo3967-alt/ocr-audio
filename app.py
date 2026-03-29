@@ -144,7 +144,6 @@ with st.sidebar:
               "Canada",
               "Australia",
               "Ireland",
-              "Français",
           ),
       )
       
@@ -163,8 +162,7 @@ with st.sidebar:
           tld = "com.au"
       elif english_accent == "Ireland":
           tld = "ie"
-      elif english_accent == "Français":
-          tld = "co.fr"
+
 
       display_output_text = st.checkbox("Mostrar texto")
 
